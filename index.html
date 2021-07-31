@@ -15,7 +15,7 @@
   <body style="background-color: black">
     <div class="container-md" style="background: black">
       <nav
-        class="navbar navbar-expand-lg navbar-light"
+        class="navbar navbar-expand-lg navbar-light d-flex sticky-top"
         style="background-color: black"
       >
         <div class="container-fluid" style="background-color: black">
@@ -40,7 +40,10 @@
             "
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul
+              class="navbar-nav d-flex justify-content-between"
+              style="width: 100%"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link mr-5"
@@ -57,9 +60,11 @@
                   style="
                     font-family: 'Lucida Console', sans-serif;
                     color: white;
+                    margin: 0;
+                    font-size: 25px;
                   "
                 >
-                  "abijah nesbitt"</a
+                  &lt;abijah nesbitt/&gt;</a
                 >
               </li>
               <li class="nav-item">
@@ -69,6 +74,62 @@
           </div>
         </div>
       </nav>
+      <main
+        style="
+          color: white;
+          height: 600px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        "
+      >
+        <div class="container-fluid text-center">
+          <h1 style="font-size: clamp(40px, 6vw, 70px)">Hi, I'm Abijah.</h1>
+          <br />
+          <h1 style="font-size: clamp(40px, 6vw, 70px)">I make web apps,</h1>
+          <br />
+          <h1 style="font-size: clamp(40px, 6vw, 70px)">
+            mobile apps, and games
+          </h1>
+        </div>
+      </main>
+      <div
+        class="container-fluid text-center d-flex"
+        style="background-color: white; height: 700px; flex-direction: row"
+      >
+        <div
+          class="
+            container
+            text-start
+            d-flex
+            justify-content-center
+            flex-column
+            ms-5
+          "
+        >
+          <h1 style="font-size: clamp(40px, 6vw, 75px)" class="mb-4">
+            Web Development
+          </h1>
+          <p class="mb-4 mt-4" style="font-size: clamp(20px, 3vw, 30px)">
+            I use HTML, CSS, Javascript, and React to create web applications
+          </p>
+
+          <button
+            class="w-25 p-3 rounded-pill mt-3"
+            style="background-color: white"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="container d-flex align-items-center justify-content-center">
+          <img
+            src="./assets/mockup.png"
+            alt="Computer Website Mockup"
+            class="img-fluid"
+          />
+        </div>
+      </div>
     </div>
 
     <script
